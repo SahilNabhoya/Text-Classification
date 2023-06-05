@@ -3,7 +3,7 @@ from transformers import DistilBertForSequenceClassification, DistilBertTokenize
 import torch
 import re
 from bs4 import BeautifulSoup
-st.set_option('browser.gatherUsageStats', False)
+
 
 model = DistilBertForSequenceClassification.from_pretrained('output_model')
 tokenizer = DistilBertTokenizer.from_pretrained('output_model')
